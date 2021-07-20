@@ -1,0 +1,2 @@
+<!--pages/view/home/home.wxml-->
+<web-view src="https://byfile.disscode.cn/pdfjs-2.8/web/viewer.html?file={{url}}"></web-view>

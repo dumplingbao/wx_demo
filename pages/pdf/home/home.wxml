@@ -1,0 +1,35 @@
+<!--pages/pdf/home/home.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">文件</view>
+</cu-custom>
+<view class="cu-bar margin-top bg-white">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>pdf预览（第三方pdfjs）
+  </view>
+</view>
+<view class="grid col-1 padding-sm">
+  <view class="margin-tb-xs text-center" wx:for="{{pdfList}}" wx:key wx:if="{{item.name!='white'}}">
+    <button bindtap='toView' data-url='{{item.url}}' class="cu-btn round line{{bordersize?bordersize:''}}-{{item.name}} {{shadow?'shadow':''}}">{{item.title}}</button>
+  </view>
+</view>
+<view class="cu-bar margin-top bg-white">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>pdf预览（wx.openDocument）
+  </view>
+</view>
+<view class="grid col-1 padding-sm">
+  <view class="margin-tb-xs text-center" wx:for="{{pdfWxList}}" wx:key wx:if="{{item.name!='white'}}">
+    <button bindtap='toViewWx' data-url='{{item.url}}' class="cu-btn round line{{bordersize?bordersize:''}}-{{item.name}} {{shadow?'shadow':''}}">{{item.title}}</button>
+  </view>
+</view>
+<view class="cu-bar margin-top bg-white">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>markdown预览
+  </view>
+</view>
+<view class="grid col-1 padding-sm">
+  <view class="margin-tb-xs text-center" wx:for="{{markdownList}}" wx:key wx:if="{{item.name!='white'}}">
+    <button bindtap='toMarked' data-url='{{item.url}}' class="cu-btn round line{{bordersize?bordersize:''}}-{{item.name}} {{shadow?'shadow':''}}">{{item.title}}</button>
+  </view>
+</view>

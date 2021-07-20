@@ -1,0 +1,2 @@
+<!--pages/view/markd/markd.wxml-->
+<web-view src="https://byfile.disscode.cn/marked/marked.html?file={{url}}"></web-view>

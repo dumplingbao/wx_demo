@@ -1,0 +1,8 @@
+<!--pages/markd/home/home.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">文件</view>
+</cu-custom>
+<view class="container">
+	<wemark md="{{md}}" link highlight type="wemark"></wemark>
+</view>

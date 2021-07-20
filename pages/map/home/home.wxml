@@ -1,0 +1,14 @@
+<!--pages/map/home/home.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">地图</view>
+</cu-custom>
+<map 
+  id="mapId"
+  class="map"
+  latitude="{{latitude}}"
+  longitude="{{longitude}}"
+  bindmarkertap="onMarkerTap"
+  bindcallouttap="onCalloutTap"
+  bindlabeltap="onLabelTap"
+></map>
