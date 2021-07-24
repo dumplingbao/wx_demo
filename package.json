@@ -1,0 +1,23 @@
+{
+  "name": "wx_demo",
+  "version": "1.0.0",
+  "description": "一般文件预览除了图片基本主要指office的文件预览，不同文件（word、Excel、pdf）格式差异大，所以很难有共性。相对来说PDF的预览会相对简单一些，而且大都能转换成pdf，我们就已pdf为例。小程序官方未提供，目前能找到和想到的方式，如下：",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dumplingbao/wx_demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dumplingbao/wx_demo/issues"
+  },
+  "homepage": "https://github.com/dumplingbao/wx_demo#readme",
+  "dependencies": {
+    "lin-ui": "^0.9.4"
+  }
+}
