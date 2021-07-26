@@ -13,7 +13,7 @@
   flex-direction: row;
   align-items: center;
   width: 750rpx;
-  height: 100rpx;
+  height: 80rpx;
 }
 
 .content-name {
@@ -100,13 +100,28 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-color: white;
+  background-color: #eee;
 }
 
 .l-header-sticky-class {
   right: 0 !important;
   box-sizing: border-box !important;
   padding: 0 20rpx !important;
-  background-color: white !important;
+  background-color: #eee !important;
   z-index: 1 !important;
+}
+
+.new-time{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 750rpx;
+  height: 40rpx;
+  background-color: #ccfdff;
+}
+
+.left-line{
+  border-width: 0 0 0 0rpx;
+  border-style: solid;
+  border-color: #ccfdff;
 }
