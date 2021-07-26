@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "search-bar":"/miniprogram_npm/lin-ui/search-bar/index",
+    "l-card":"/miniprogram_npm/lin-ui/card/index",
+    "l-button":"/miniprogram_npm/lin-ui/button/index",
+    "l-icon": "/miniprogram_npm/lin-ui/icon/index",
+    "l-tag":"/miniprogram_npm/lin-ui/tag/index",
+    "l-sticky":"/miniprogram_npm/lin-ui/sticky/index",
+    "l-sticky-item":"/miniprogram_npm/lin-ui/sticky-item/index",
+    "share-box": "/pages/share/custom/custom",
+    "poster-box": "/pages/share/poster/poster"
+  }
+}

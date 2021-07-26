@@ -1,0 +1,61 @@
+<!--pages/painter/home/home.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">文件</view>
+</cu-custom>
+<l-sticky scrollTop="{{scrollTop}}" mode="css">
+  <l-sticky-item top="142" l-header-sticky-class="l-header-sticky-class">
+    <view slot="header" class="container-search-bar" style="height:80rpx">
+      <search-bar style="width:100%" l-container-class="l-container-class" />
+    </view>
+    <view slot="body" class="view-container">
+      <l-sticky mode="css">
+        <block wx:for="{{news}}" wx:key="index">
+          <l-sticky-item top="220" l-header-sticky-class="l-header-sticky-class">
+
+            <view class="card-top" slot="header">
+              <view class="card-dot"></view>
+              <view class="content-name">{{item.time}}</view>
+            </view>
+
+            <view slot="body">
+              <block wx:for="{{item.items}}" wx:for-item="new" wx:key="index">
+                <l-card slot="body" type="primary" plaintext l-class="card"
+              title="{{new.title}}">
+                  
+                  <view class="avter-content">
+                    <l-tag shape="circle" bg-color="#f3f3f3" font-color="#3963BC" slot="more" size="mini">{{new.source}}</l-tag>
+                    {{new.content}}
+                  </view>
+                  <view class="avter-share-container">
+                    <l-button special="true" bind:tap="openShare" data-time="{{new.time}}" data-source="{{new.source}}" data-id="{{new.id}}" data-title="{{new.title}}" data-content="{{new.content}}">
+                      <view class="share-box">
+                        <l-icon size="40" name="share" color="#3963bc" />
+                      </view>
+                    </l-button>
+                    <view class="like-container">
+                      <l-icon name="like" color="#666" size="28" />
+                      <view class="number">{{new.loveNum}}喜欢</view>
+                    </view>
+                    <view class="like-container">
+                      <l-icon name="default" color="#666" size="28" />
+                      <view class="number">{{new.cmtNum}}评论</view>
+                    </view>
+                  </view>
+                  
+                </l-card>
+              </block>
+            </view>
+            
+          </l-sticky-item>
+        </block>
+      </l-sticky>
+    </view>
+  </l-sticky-item>
+</l-sticky>
+
+<!-- 分享绘图组件 -->
+<share-box wx:if="{{isCanDraw}}" isCanDraw="{{isCanDraw}}" time="{{timeShare}}" source="{{sourceShare}}" id="{{idShare}}" title="{{titleShare}}"  content="{{contentShare}}" bind:close="handleClose"  bind:initData="initData" bind:createPoster="createPoster"/>
+
+<!-- 海报组件 -->
+<poster-box isPoster="{{isPoster}}" time="{{timeShare}}" source="{{sourceShare}}" id="{{idShare}}" title="{{titleShare}}"  content="{{contentShare}}" bind:closePoster="handleClosePoster"/>

@@ -34,6 +34,12 @@ Page({
         color: 'white',
         icon: 'read'
       },
+      {
+        title: 'Painter',
+        name: 'painter',
+        color: 'white',
+        icon: 'read'
+      },
     ],
   },
   // 事件处理函数

@@ -1,0 +1,20 @@
+<!--pages/share/custom/custom.wxml-->
+<view class="share-wrap {{visible ? 'active' : ''}}" catchtouchmove="preventDefault">
+  <view class="share-back {{visible ? 'active' : ''}}"></view>
+  <view class="share-container {{visible ? 'active' : ''}}">
+    <view class="close" bindtap="handleClose"></view>
+    <image mode="widthFix" src="{{sharePath}}" class="share-image" />
+		<view class="FengMo">
+			<button data-id="{{id}}" open-type="share" class="WeiXiFen">
+				<image src="/images/weixifen.png"></image>
+				<p>分享</p>
+			</button>
+			<view class="XiaZai" bindtap="createPoster">
+				<image src="/images/xiazai.png"></image>
+				<p>生成海报</p>
+			</view>
+		</view>
+		
+  </view>
+</view>
+<painter style="position: absolute; top: -9999rpx;"  palette="{{imgDraw}}" bind:imgOK="onImgOK" />
