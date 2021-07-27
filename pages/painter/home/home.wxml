@@ -6,7 +6,7 @@
 <l-sticky scrollTop="{{scrollTop}}" mode="css">
   <l-sticky-item top="142" l-header-sticky-class="l-header-sticky-class">
     <view slot="header" class="container-search-bar" style="height:80rpx">
-      <search-bar style="width:100%" l-container-class="l-container-class" bgColor="white"/>
+      <search-bar style="width:100%" l-container-class="l-container-class" bgColor="white" showCancel=""/>
     </view>
     <view slot="body" class="view-container">
       <l-sticky mode="css">
@@ -15,6 +15,7 @@
 
             <view class="card-top" slot="header">
               <!-- <view class="card-dot"></view> -->
+              <l-icon name="time" size="25" />
               <view class="content-name">{{item.time}}</view>
             </view>
 
@@ -25,7 +26,7 @@
                   <view class="content-name">{{new.time}}</view>
                 </view>
                 <view class="left-line">
-                  <l-card slot="body" type="primary" plaintext l-class="card" type="cover" full="true"
+                  <l-card slot="body" type="primary" plaintext l-class="card" type="cover" 
               title="{{new.title}}">
                     <view class="avter-content">
                       <l-tag shape="circle" bg-color="#f3f3f3" font-color="#3963BC" slot="more" size="mini">{{new.source}}</l-tag>

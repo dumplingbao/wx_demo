@@ -22,7 +22,7 @@
   font-weight: 400;
   color: rgba(69, 82, 107, 1);
   line-height: 20px;
-  margin-left: 8px;
+  margin-left: 4px;
 }
 
 .card {
@@ -117,7 +117,7 @@
   align-items: center;
   width: 750rpx;
   height: 40rpx;
-  background-color: #ccfdff;
+  background-color: #EEE;
 }
 
 .left-line{
