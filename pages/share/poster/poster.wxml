@@ -4,8 +4,8 @@
   <view class="share-container {{visiblePoster ? 'active' : ''}}">
     <view class="close" bindtap="handleClosePoster"></view>
     <image mode="widthFix" src="{{sharePathPoster}}" class="share-image" />
-		<view class="FengMo">
-			<view class="XiaZai" bindtap="handleSavePhotoPoster">
+		<view class="saveButton">
+			<view class="operateButton" bindtap="handleSavePhotoPoster">
 				<image src="/images/save.png"></image>
 				<p>保存到相册</p>
 			</view>

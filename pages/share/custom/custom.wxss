@@ -90,47 +90,49 @@
   margin: 32rpx 0;
 }
 
-.save-btn {
-  width: 336rpx;
-  height: 96rpx;
-  margin: 0 auto 94rpx;
-  background: url('https://qiniu-image.qtshe.com/20190506save-btn.png') center center;
-  background-size: 100% 100%;
-}
-.FengMo{
+.operateButton{
 	display: flex;
 	/* margin-top:90rpx; */
 	border-top: 1px solid #eee;
-	padding: 30rpx 0;
+	padding: 20rpx 0;
 
 }
-.WeiXiFen{
+.shareButton{
 	width: 50%;
 	background: #fff;
 }
-.WeiXiFen::after{
-	border: none;
-}
-.WeiXiFen>image{
+.shareButton>image{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 	width: 80rpx;
-	height: 80rpx;
+  height: 80rpx;
+  margin-left: 35%;
 }
-.WeiXiFen>p{
+.shareButton>p{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 	font-size: 32rpx;
 	height: 40rpx;
-	line-height: 40rpx;
-	margin-top: -23rpx;
 }
-.XiaZai{
-	width: 50%;
-	text-align: center;
+.createPoster{
+  width: 50%;
+  margin-top: 20rpx
 }
-.XiaZai>image{
+.createPoster>image{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 	width: 80rpx;
-	height: 80rpx;
+  height: 80rpx;
+  margin-left: 40%;
 }
-.XiaZai>p{
+.createPoster>p{
+  display: flex;
+  flex-direction: row;
 	font-size: 32rpx;
 	height: 40rpx;
-	line-height: 40rpx;
+  line-height: 40rpx;
+  margin-left: 35%;
 }

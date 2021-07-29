@@ -90,40 +90,29 @@
   margin: 32rpx 0;
 }
 
-.FengMo{
+.saveButton{
 	display: flex;
-	/* margin-top:90rpx; */
 	border-top: 1px solid #eee;
 	padding: 30rpx 0;
+}
 
+.operateButton{
+  width: 100%;
+  text-align: center;
 }
-.WeiXiFen{
-	width: 50%;
-	background: #fff;
-}
-.WeiXiFen::after{
-	border: none;
-}
-.WeiXiFen>image{
-	width: 80rpx;
-	height: 80rpx;
-}
-.WeiXiFen>p{
-	font-size: 32rpx;
-	height: 40rpx;
-	line-height: 40rpx;
-	margin-top: -23rpx;
-}
-.XiaZai{
-	width: 100%;
-	text-align: center;
-}
-.XiaZai>image{
+.operateButton>image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 	width: 110rpx;
-	height: 110rpx;
+  height: 110rpx;
+  margin-left: 43%
 }
-.XiaZai>p{
+.operateButton>p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 	font-size: 32rpx;
 	height: 40rpx;
-	line-height: 40rpx;
+  line-height: 40rpx;
 }

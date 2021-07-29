@@ -54,7 +54,7 @@ Component({
           views: [
             {
               type: 'image',
-              url: 'https://ossbao.oss-cn-qingdao.aliyuncs.com/blog/2021/wx/pt/bg.jpg',
+              url: 'https://byfile.disscode.cn/blog/2021/wx/pt/bg.jpg',
               css: {
                 top: '0rpx',
                 left: '0rpx',
@@ -153,7 +153,7 @@ Component({
             },
             {
               type: 'image',
-              url: 'https://ossbao.oss-cn-qingdao.aliyuncs.com/by10/xcx.jpg',
+              url: 'https://byfile.disscode.cn/by10/xcx.jpg',
               css: {
                 top: '680rpx',
                 left: '0rpx',
