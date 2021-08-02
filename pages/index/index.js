@@ -40,6 +40,12 @@ Page({
         color: 'white',
         icon: 'read'
       },
+      {
+        title: 'Calendar',
+        name: 'Calendar',
+        color: 'white',
+        icon: 'calendar'
+      },
     ],
   },
   // 事件处理函数
